@@ -11,4 +11,21 @@
   </welcome-file-list>
   
   <!-- 测试 -->
+  <servlet>
+  	<display-name>articleActionServlet</display-name>
+  	<servlet-name>articleActionServlet</servlet-name>
+  	<servlet-class>com.rain.action.ArticleActionServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<display-name>messageActionServlet</display-name>
+  	<servlet-name>messageActionServlet</servlet-name>
+  	<servlet-class>com.rain.action.messageActionServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<display-name>photoActionServlet</display-name>
+  	<servlet-name>photoActionServlet</servlet-name>
+  	<servlet-class>com.rain.action.photoActionServlet</servlet-class>
+  </servlet>
 </web-app>

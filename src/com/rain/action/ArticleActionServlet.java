@@ -42,13 +42,13 @@ public class ArticleActionServlet extends BaseServlet {
 		response.setContentType("text/html;charset=utf-8");
 		int a_id = RequestUtil.getInt(request, "a_id");
 		String type = RequestUtil.getString(request, "type");
-		ArticleFactory factory = new ArticleFactory();
+//		ArticleFactory factory = new ArticleFactory();
 		if(type.equals("list")){
-			List<Article> list = factory.getArticleInstance().show_Article_list();
+			List<Article> list = ArticleFactory.getArticleInstance().show_Article_list();
 			request.setAttribute("list", list);
 			WebUtil.forward(request, response, "article_show_List.jsp");
 		}else if(type.equals("all")){
-			Article article = factory.getArticleInstance().show_Article_All(a_id);
+			Article article = ArticleFactory.getArticleInstance().show_Article_All(a_id);
 			request.setAttribute("article", article);
 			WebUtil.forward(request, response, "article_show_All.jsp");
 		}

@@ -8,7 +8,7 @@ import java.sql.SQLException;
 
 public class DBUtil {
 	public static String username="root";
-	public static String password="root";
+	public static String password="123456";
 	public static String url="jdbc:mysql://localhost:3306/db_blog";
 	
 	static{
@@ -22,7 +22,7 @@ public class DBUtil {
 	//获取到数据库的链接
 	public static  Connection getConnectDb()
 	{
-		Connection conn=null;
+		Connection conn = null;
 		try {
 			conn = DriverManager.getConnection(url,username,password);
 		} catch (SQLException e) {

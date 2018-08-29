@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<jsp:include page="/index.jsp"></jsp:include>
+<%-- <jsp:include page="/index.jsp"></jsp:include> --%>
 <div class="fbg">
     <div class="fbg_resize">
       <div class="col c1">
@@ -33,7 +33,7 @@
     </div>
   </div>
   <div  align="center">
-   <a href="mailto:641351484@qq.com"> 联系我
+   <a href="mailto:641351484@qq.com" /> 联系我
   </div>
 </body>
 </html>
